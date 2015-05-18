@@ -4,11 +4,11 @@ angular.module('widget')
             sizex: 2,
             sizey: 2,
             color: '#292625',
-            template: 'Dashboard-widget-Joke/joke.html',
+            template: 'Dashboard-Widget-Joke/joke.html',
             dataBind: {
                 type: 'external',
                 source: 'http://api.icndb.com/jokes/random',
-                interval: 1000
+                interval: 60 * 60 * 1000
             }
         });
     });
